@@ -45,6 +45,11 @@ class UploadViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\Form\UploadViewHelpe
     protected $propertyMapper;
 
     /**
+     * @var bool
+     */
+    protected $respectSubmittedDataValue = true;
+
+    /**
      * Render the upload field including possible resource pointer
      *
      * @return string
